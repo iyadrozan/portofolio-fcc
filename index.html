@@ -15,7 +15,7 @@
   </head>
   <body id="body">
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm" style="background-color: #df2e2e">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm" id="navbar" style="background-color: #df2e2e">
       <div class="container">
         <a class="navbar-brand" href="#">Iyad Rozan</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,12 +41,12 @@
     </nav>
     <!-- Navbar End -->
     <!-- JumboTron Start -->
-    <section class="jumbotron text-center">
+    <section class="jumbotron text-center" id="welcome-section">
       <img src="asset/Profile Iyad.png" alt="Profile Picture" class="rounded-circle" width="250" />
       <h1 class="display-4">IYAD ROZAN BONE</h1>
       <p class="lead">Mahasiswa | Web Developer</p>
-      <a class="btn btn-dark btn-sm" href="https://github.com/iyadrozan" target="_blank" role="button">Follow My Github <i class="fab fa-github"></i></a>
-      <svg height="100%" width="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+      <a id="profile-link" class="btn btn-dark btn-sm" href="https://github.com/iyadrozan" target="_blank" role="button">Follow My Github <i class="fab fa-github"></i></a>
+      <svg  height="100%" width="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="wave1 transition duration-300 ease-in-out delay-150">
         <path
           d="M 0,400 C 0,400 0,133 0,133 C 141.46666666666664,112.33333333333333 282.9333333333333,91.66666666666666 467,97 C 651.0666666666667,102.33333333333334 877.7333333333333,133.66666666666669 1047,144 C 1216.2666666666667,154.33333333333331 1328.1333333333332,143.66666666666666 1440,133 C 1440,133 1440,400 1440,400 Z"
           stroke="none"
@@ -106,7 +106,7 @@
     </section>
     <!-- About End -->
     <!-- Project Start -->
-    <section id="project">
+    <section id="projects">
       <div class="container">
         <div class="row">
           <div class="col text-center">
@@ -115,7 +115,7 @@
         </div>
         <div class="row">
           <div class="col-xl-4 mb-3">
-            <div class="card">
+            <div class="card project-tile">
               <img src="asset/Product landing page.png" class="card-img-top" alt="Project Image" />
               <div class="card-body text-center">
                 <h5 class="card-title">Product Landing Page</h5>
@@ -125,7 +125,7 @@
             </div>
           </div>
           <div class="col-xl-4 mb-3">
-            <div class="card">
+            <div class="card project-tile">
               <img src="asset/survey form covid-19.jpg" class="card-img-top" alt="Project Image" />
               <div class="card-body text-center">
                 <h5 class="card-title">Survey Form covid-19</h5>
@@ -135,7 +135,7 @@
             </div>
           </div>
           <div class="col-xl-4">
-            <div class="card">
+            <div class="card project-tile">
               <img src="asset/Trribute page nani wartabone.jpg" class="card-img-top" alt="Project Image" />
               <div class="card-body text-center">
                 <h5 class="card-title">Tribute Page Nani Wartabone</h5>
@@ -190,11 +190,15 @@
       <p>Created By <a href="https://www.instagram.com/iyad_rozan" target="_blank">Iyad_Rozan</a></p>
       <p>Follow</p>
       <p class="texting"><a href="https://www.facebook.com/iyadrozan"><i class="fab fa-facebook"></i></a>  <a href="https://www.instagram.com/iyad_rozan"><i class="fab fa-instagram"></i></a>  <a href="https://github.com/iyadrozan"><i class="fab fa-github"></i></a></p>
+      <p class="mobile">Mobile Version <i class="fas fa-mobile-alt"></i></p>
+      <p class="Desktop">Desktop Version <i class="fas fa-mobile-alt"></i></p>
     </footer>
     <!-- Footer End -->
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b8fc40e247.js" crossorigin="anonymous"></script>
+    <!-- Script FreecodeCamp -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>

@@ -21,9 +21,12 @@ body {
 }
 
 .jumbotron {
+  padding-top: 5rem;
   background-color: #fff7ae;
   cursor: default;
-  padding-top: 5rem;
+  height: 100vh;
+  position: relative;
+  z-index: -1;
 }
 
 .jumbotron .rounded-circle {
@@ -57,12 +60,12 @@ body {
   font-size: 0.9em;
 }
 
-#project {
+#projects {
   background-color: #fff7ae;
   cursor: default;
 }
 
-#project .container h3 {
+#projects .container h3 {
   font-size: 3em;
   font-variant: small-caps;
   font-family: "Style Script", cursive;
@@ -101,10 +104,30 @@ section {
   padding-top: 5rem;
 }
 
-#project .row .col-xl-4 .card:hover {
+#projects .row .col-xl-4 .card:hover {
   transition: 0.5s;
 }
-#project .row .col-xl-4 .card:hover {
+#projects .row .col-xl-4 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 5px 7px rgba(0, 0, 0, 0.452);
+}
+
+.mobile {
+  color: rgba(255, 255, 255, 0.637);
+  display: none;
+}
+
+.Desktop {
+  color: rgba(255, 255, 255, 0.637);
+}
+
+/* Media Query Mobile VErsion */
+@media (max-width: 576px) {
+  .mobile {
+    display: inherit;
+  }
+
+  .Desktop {
+    display: none;
+  }
 }
